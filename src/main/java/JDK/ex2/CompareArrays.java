@@ -11,7 +11,7 @@ public class CompareArrays {
             return false;
         }
         for (int i = 0; i < arr1.length; i++) {
-            if (!arr1[i].equals(arr2[i])) {
+                if (!arr1[i].getClass().equals(arr2[i].getClass())) {
                 return false;
             }
         }
@@ -22,6 +22,7 @@ public class CompareArrays {
         String[] arr1 = {"a", "b", "c"};
         String[] arr2 = {"a", "b", "c"};
         System.out.println(compareArrays(arr1, arr2));
+        System.out.println(arr1.getClass());
 
         Integer[] arr3 = {1, 2, 3};
         Integer[] arr4 = {1, 2, 3};
